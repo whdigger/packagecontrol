@@ -1,4 +1,4 @@
-# Краткое описание PackageControl
+# Описание PackageControl
 
 PackageControl - автоматизация процесса создания локального репозитория, из определённого набора пакетов под различные архитектуры.  
 Для работы скриптов необходимо чтобы пользователь был добавлени в sudo.
@@ -40,3 +40,11 @@ D39DC0E3 маркер ключа полученный при генерации 
 -arch архитектура  
 -d директория репозитория  
 
+## Экспорт/Импорт приватных/публичных ключей
+```
+gpg --export ${ID} > public.key
+gpg --export-secret-key ${ID} > private.key
+
+gpg --import public.key
+gpg --allow-secret-key-import --import private.key
+```
