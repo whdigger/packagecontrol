@@ -37,4 +37,4 @@ php5-xsl
 php-apc
 php-pear
 libmemcached11
-
+memcached
