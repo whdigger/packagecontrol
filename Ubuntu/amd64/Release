@@ -1,0 +1,7 @@
+Archive: internalRepo
+Origin: Ubuntu
+Label: Local Ubuntu Internal Repository
+Architecture: amd64
+MD5Sum:
+ 672e4b4e1dddfcd620c930d0ada87ccd            35456 Packages
+ dbb0bb223e6220db285b2adc3515343a            11084 Packages.gz
