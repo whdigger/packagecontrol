@@ -59,6 +59,42 @@ Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
  SSL support is provided by OpenSSL.
 Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
 
+Package: libmemcached11
+Source: libmemcached
+Version: 1.0.18-3+deb.sury.org~trusty+2
+Architecture: amd64
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Installed-Size: 259
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.16), libgcc1 (>= 1:4.1.1), libsasl2-2 (>= 2.1.24), libstdc++6 (>= 4.1.1)
+Filename: ./libmemcached11_1.0.18-3+deb.sury.org~trusty+2_amd64.deb
+Size: 93308
+MD5sum: 62abe773e429e17291ca20ad60aa9483
+SHA1: 4f892b9a6089391ff121cc0e8cbaf18d99e1213a
+SHA256: 5c0d58d8289ca5882fcef951653d42531b7025ccc4c2c734c10b4cf107f58928
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://libmemcached.org/libMemcached.html
+Description: C and C++ client library to the memcached server
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+   * Synchronous and Asynchronous support.
+   * Access to large object support.
+   * Local replication.
+   * TCP and Unix Socket protocols.
+   * A half dozen or so different tuneable hash algorithms.
+   * Implementations of the new cas, replace, and append operators.
+   * Man pages written up on entire API.
+   * Implements both modulo and consistent hashing solutions.
+   * Tools to Manage your Memcached networks.
+ .
+ This package provides the libmemcached shared library itself.
+
 Package: libpcre3-dev
 Source: pcre3
 Version: 1:8.31-2ubuntu2.1
