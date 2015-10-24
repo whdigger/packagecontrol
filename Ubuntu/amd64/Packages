@@ -303,6 +303,60 @@ Description: MySQL database client (metapackage depending on the latest version)
  Maintainers.
 Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
+Package: mysql-client-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 29642
+Depends: debianutils (>= 1.6), libdbd-mysql-perl (>= 1.2202), libdbi-perl, libterm-readkey-perl, mysql-client-core-5.5, mysql-common (>= 5.5.44-0ubuntu0.14.04.1), perl, libc6 (>= 2.17), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Replaces: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Provides: mysql-client, virtual-mysql-client
+Filename: ./mysql-client-5.5_5.5.44-0ubuntu0.14.04.1_amd64.deb
+Size: 1573248
+MD5sum: 184d62b1af73fca07a1c062a502da341
+SHA1: 49ec60ec7ee59b0fa65f0df0563f8d7665297d87
+SHA256: ff4b60ed98bcdaf18fb0847d41bcca1b6eef2c88ff2390d7fc519bad8f6f9318
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-client-core-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 6806
+Depends: libc6 (>= 2.14), libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Replaces: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Filename: ./mysql-client-core-5.5_5.5.44-0ubuntu0.14.04.1_amd64.deb
+Size: 702344
+MD5sum: 700e3813f2afe04e76a67ca6b360ef6f
+SHA1: 427e7fbbafa8b03ccabb9d21a8915893ecdeffb3
+SHA256: 3e7f0a64ce799dbbafd6c6b4cda1b180baff7b476bbad4cff78e28cd694ac541
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database core client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
 Package: mysql-common
 Source: mysql-5.5
 Version: 5.5.44-0ubuntu0.14.04.1
@@ -357,6 +411,65 @@ Description: MySQL database server (metapackage depending on the latest version)
  ease of use.
 Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
 
+Package: mysql-server-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 31931
+Pre-Depends: adduser (>= 3.40), debconf, mysql-common (>= 5.5.44-0ubuntu0.14.04.1)
+Depends: initscripts (>= 2.88dsf-13.3), libdbi-perl, lsb-base (>= 3.0-10), mysql-client-5.5 (>= 5.5.44-0ubuntu0.14.04.1), mysql-server-core-5.5 (>= 5.5.44-0ubuntu0.14.04.1), passwd, perl (>= 5.6), psmisc, debconf (>= 0.5) | debconf-2.0, sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libc6 (>= 2.17), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Recommends: libhtml-template-perl
+Suggests: tinyca, mailx
+Breaks: libmysqlclient-dev (<< 5.5.17~), mysql-client-5.1, mysql-server (<< 5.5.44-0ubuntu0.14.04.1), mysql-server-5.1
+Replaces: libmysqlclient-dev (<< 5.5.17~), mysql-client-5.1, mysql-server (<< 5.5.44-0ubuntu0.14.04.1), mysql-server-5.0, mysql-server-5.1
+Provides: virtual-mysql-server
+Filename: ./mysql-server-5.5_5.5.44-0ubuntu0.14.04.1_amd64.deb
+Size: 1954550
+MD5sum: 2026bc23b40d6e4405b9e62c7ea8fb78
+SHA1: ca20b7fbef8d9248adcd3fe696790dd1bd6f628b
+SHA256: 58d5731aac9357cf8f9e314f5ce12f9bc2afc324ff5864b429a4addec309de12
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database server binaries and system database setup
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package contains all the infrastructure needed to setup system
+ databases.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-server-core-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19429
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.17), libstdc++6 (>= 4.1.1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.2.0)
+Breaks: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.1
+Replaces: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.0, mysql-server-core-5.1
+Provides: mysql-server-core
+Filename: ./mysql-server-core-5.5_5.5.44-0ubuntu0.14.04.1_amd64.deb
+Size: 3589484
+MD5sum: 19377780ab446d0ea042297e65656f3c
+SHA1: 4980beb8152b4d85795431d124267b7efbbfcf86
+SHA256: 6b4078ad49b3799edbbd13b322207df52879527b44cba32db67d0e52c629de38
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database server binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries but doesn't contain all the
+ infrastructure needed to setup system databases.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
 Package: nginx
 Version: 1.8.0-1+trusty1
 Architecture: all
@@ -378,6 +491,73 @@ Description: small, powerful, scalable web/proxy server
  .
  This is a dependency package to install either nginx-full (by default) or
  nginx-light.
+
+Package: nginx-common
+Source: nginx
+Version: 1.8.0-1+trusty1
+Architecture: all
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 287
+Depends: lsb-base (>= 3.2-14), init-system-helpers (>= 1.13~), sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), python
+Suggests: fcgiwrap, nginx-doc, ssl-cert
+Breaks: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Replaces: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Filename: ./nginx-common_1.8.0-1+trusty1_all.deb
+Size: 47672
+MD5sum: 0cce522bfaf4f3d08281d08a16060fbd
+SHA1: 30ffbb53db8207d797322d0aa5e04f6beebed1e3
+SHA256: 998df0e9e4640c60095d922f18fc15987a8a299f4dafe9dff3f87987a59c0c60
+Section: httpd
+Priority: optional
+Homepage: http://nginx.net
+Description: small, powerful, scalable web/proxy server - common files
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package contains base configuration files used by all versions of
+ nginx.
+
+Package: nginx-full
+Source: nginx
+Version: 1.8.0-1+trusty1
+Architecture: amd64
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 1141
+Depends: nginx-common (= 1.8.0-1+trusty1), libc6 (>= 2.14), libexpat1 (>= 2.0.1), libgd3 (>= 2.1.0~alpha~), libgeoip1, libpam0g (>= 0.99.7.1), libpcre3, libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.2.0)
+Suggests: nginx-doc (= 1.8.0-1+trusty1)
+Conflicts: nginx-extras, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Provides: httpd, httpd-cgi, nginx
+Filename: ./nginx-full_1.8.0-1+trusty1_amd64.deb
+Size: 409972
+MD5sum: f5ca2972b031bb3ae98a66295260b66e
+SHA1: 387ed2e5b6315caebd67dc0051e44a801ed8ca21
+SHA256: 2329aec7cfca12aaf76b3d61a763535426adffc76195fadbf3807805e3f9f2f8
+Section: httpd
+Priority: optional
+Homepage: http://nginx.net
+Description: nginx web/proxy server (standard version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extra).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, GeoIP, Gunzip,
+ Gzip, Gzip Precompression, Headers, Image Filter, Index, Log, Real IP, Spdy,
+ SSI, SSL, Stub Status, Substitution, Upstream, User ID, XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, HTTP Substitutions, Upstream
+ Fair Queue.
 
 Package: nodejs
 Version: 0.10.40-1nodesource1~trusty1
@@ -962,4 +1142,28 @@ Description: Persistent key-value database with network interface
  manipulating and querying data structures such as lists and sets.
  .
  The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: redis-tools
+Source: redis
+Version: 3:3.0.5-1chl1~trusty1
+Architecture: amd64
+Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 281
+Depends: libc6 (>= 2.14), libjemalloc1 (>= 2.1.1)
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Filename: ./redis-tools_3%3a3.0.5-1chl1~trusty1_amd64.deb
+Size: 81822
+MD5sum: d34f5c5987c9cfd40279723cc4896393
+SHA1: 4a220e62380dc0185482f3b483f74a7383a4123f
+SHA256: df3598baeb09cbc79fc6f2c975bc63b00b51cb806844c0e1fa4a6b67005127fb
+Section: database
+Priority: optional
+Homepage: http://redis.io/
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
 

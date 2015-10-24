@@ -8,9 +8,15 @@ mongodb-org-server
 mongodb-org-shell
 mongodb-org-tools
 mysql-client
-mysql-common
+mysql-client-5.5
+mysql-client-core-5.5
+mysql-server-core-5.5
+mysql-server-5.5
 mysql-server
+mysql-common
 nginx
+nginx-common
+nginx-full
 nodejs
 nodejs-legacy
 npm
