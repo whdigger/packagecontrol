@@ -3,6 +3,10 @@ libcurl3
 libpcre3-dev
 mcrypt
 mongodb-org
+mongodb-org-mongos
+mongodb-org-server
+mongodb-org-shell
+mongodb-org-tools
 mysql-client
 mysql-common
 mysql-server
