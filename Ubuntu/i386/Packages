@@ -1,0 +1,1000 @@
+Package: curl
+Version: 7.35.0-1ubuntu2.5
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 302
+Depends: libc6 (>= 2.17), libcurl3 (= 7.35.0-1ubuntu2.5), zlib1g (>= 1:1.1.4)
+Filename: ./curl_7.35.0-1ubuntu2.5_i386.deb
+Size: 122592
+MD5sum: ed3ad8fb9622fc1857c448f1e0a00d36
+SHA1: ed49265f8fe4668479f3c1eb994e1c508d001325
+SHA256: 9478adb99ad1a56a180c660d8b0e7102f30c1f3c80fce5e65825e7eea68a71a5
+Section: web
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://curl.haxx.se
+Description: command line tool for transferring data with URL syntax
+ curl is a command line tool for transferring data with URL syntax, supporting
+ DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3,
+ POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form
+ based upload, proxies, cookies, user+password authentication (Basic, Digest,
+ NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a
+ busload of other useful tricks.
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+
+Package: libcurl3
+Source: curl
+Version: 7.35.0-1ubuntu2.5
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 548
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.17), libgssapi-krb5-2 (>= 1.10+dfsg~), libidn11 (>= 1.13), libldap-2.4-2 (>= 2.4.7), librtmp0 (>= 2.3), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Filename: ./libcurl3_7.35.0-1ubuntu2.5_i386.deb
+Size: 174068
+MD5sum: e4ca23ed10965d9e0a571dd95758c0ec
+SHA1: 8da75ac4e30a814421397bda46f4decbaed68a68
+SHA256: e177e5c8c04a02b064d5a510d725b3d9ddacb9e7211e6f310856d78a7e581f4c
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://curl.haxx.se
+Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S,
+ RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ SSL support is provided by OpenSSL.
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+
+Package: libpcre3-dev
+Source: pcre3
+Version: 1:8.31-2ubuntu2.1
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 668
+Depends: libc6-dev, libpcre3 (= 1:8.31-2ubuntu2.1), libpcrecpp0 (= 1:8.31-2ubuntu2.1)
+Conflicts: libpcre1-dev, libpcre2-dev
+Filename: ./libpcre3-dev_1%3a8.31-2ubuntu2.1_i386.deb
+Size: 232056
+MD5sum: 2e9157fadb06df1db1c781adb3f63ad5
+SHA1: 8265f54755f29517202eb7b08fb467ef3240dfb2
+SHA256: 773ac2402f7614b1337efbdc3a62cc75606d86de3de1e64a7c421f805a7fda28
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Description: Perl 5 Compatible Regular Expression Library - development files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the development files, including headers, static
+ libraries, and documentation.
+Original-Maintainer: Mark Baker <mark@mnb.org.uk>
+
+Package: mcrypt
+Version: 2.6.8-1.3
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 245
+Depends: libc6 (>= 2.11), libmcrypt4 (>= 2.5.8-1), libmhash2 (>= 0.8.16-1), zlib1g (>= 1:1.1.4), bzip2
+Filename: ./mcrypt_2.6.8-1.3_i386.deb
+Size: 65378
+MD5sum: b8c7413eb9ae1a6640e68ef83ce8c6c2
+SHA1: 406371c3cf27aa4e61f8730d7170a48c69ecfe1c
+SHA256: 9cd04e159f8be70733fd202309a4fb21ec877aa8ded14c8af6c9260a13a7f84b
+Section: utils
+Priority: optional
+Homepage: http://mcrypt.sourceforge.net/
+Description: Replacement for old unix crypt(1)
+ mcrypt is a crypting program, intended to be replacement for the old
+ unix crypt(1).  But it can do a lot more, since with its libmcrypt
+ library it can encrypt and decrypt with the following alogirhtms:
+ BLOWFISH, TWOFISH, DES, TripleDES, 3-WAY, SAFER-sk64, SAFER-sk128,
+ SAFER+, OKI97, GOST, RC2, RC6, MARS, IDEA, RIJNDAEL-128,
+ RIJNDAEL-192, SERPENT, RIJNDAEL-256, CAST-128 (known as CAST5),
+ CAST-256, ARCFOUR, ENIGMA, PANAMA, XTEA and WAKE.
+ .
+ Please note that this package is buggy and unmaintained by
+ the upstream authors.  If you can, please look for other
+ implementations (openssl, gnutls, gnupg).
+Original-Maintainer: RISKO Gergely <risko@debian.org>
+
+Package: mysql-client
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 121
+Depends: mysql-client-5.5
+Filename: ./mysql-client_5.5.44-0ubuntu0.14.04.1_all.deb
+Size: 12084
+MD5sum: 0547e2707d5a6789f2317d4f63fc6516
+SHA1: 402ef6385a92298e34e351ac8eaa98803a176ccb
+SHA256: 15278aa0c8344caac9dcfc3de3113ac825a5c8155fbf97b9911794e12aa3f65e
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database client (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mysql-client (currently mysql-client-5.5), as determined by the MySQL
+ maintainers.  Install this package if in doubt about which MySQL version
+ you want, as this is the one considered to be in the best shape by the
+ Maintainers.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-client-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 29056
+Depends: debianutils (>= 1.6), libdbd-mysql-perl (>= 1.2202), libdbi-perl, libterm-readkey-perl, mysql-client-core-5.5, mysql-common (>= 5.5.44-0ubuntu0.14.04.1), perl, libc6 (>= 2.17), libgcc1 (>= 1:4.1.1), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Replaces: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-5.1
+Provides: mysql-client, virtual-mysql-client
+Filename: ./mysql-client-5.5_5.5.44-0ubuntu0.14.04.1_i386.deb
+Size: 1556540
+MD5sum: 491488809f5fa2ac50608e9420bb95a2
+SHA1: 4c2e48da1a1f2ede47239417f1fc796dd606b1a3
+SHA256: 9a3e5b10a1b05e09dc75bb337050408f88521d67b8359b0e65e7fdaf1557297e
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-client-core-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 6638
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4)
+Breaks: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Replaces: mysql-client (<< 5.5.44-0ubuntu0.14.04.1), mysql-client-5.0, mysql-client-core-5.1
+Filename: ./mysql-client-core-5.5_5.5.44-0ubuntu0.14.04.1_i386.deb
+Size: 700678
+MD5sum: 65841e384d508e2638e631d764a33798
+SHA1: 775511cadf1a13b350739511135d4ed5d12d2e0b
+SHA256: e7c64531575028253f3d02c773760ff004ce6aa1a41e0d143afeaa7d9d28d3de
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database core client binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-common
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 137
+Breaks: amarok (<< 2.5.0-2), mysql-client-5.1 (<< 5.5), mysql-server-5.1 (<< 5.5), mysql-server-core-5.1 (<< 5.5)
+Filename: ./mysql-common_5.5.44-0ubuntu0.14.04.1_all.deb
+Size: 13884
+MD5sum: 52f9928d0eb64ff0c7e50d4fb7340c66
+SHA1: efe5dd083373849fc5981de1e5603cdfc828bfcc
+SHA256: e3f8e894ee2491f353c781ce72ac0f0b616a77c14b853f43ca74c8562e2a9b98
+Section: database
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://dev.mysql.com/
+Description: MySQL database common files, e.g. /etc/mysql/my.cnf
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes files needed by all versions of the client library,
+ e.g. /etc/mysql/my.cnf.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-server
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 121
+Depends: mysql-server-5.5
+Filename: ./mysql-server_5.5.44-0ubuntu0.14.04.1_all.deb
+Size: 12200
+MD5sum: 33c76cee78295a9490dd3d13d29a19a9
+SHA1: 5be68aa3171a320338735a20e1effa3a5b7ca9df
+SHA256: 152e6ed8e9dd1466496ab730e89c55051983d4d5291d2ca598a457c2eba6074b
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database server (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mysql-server (currently mysql-server-5.5), as determined by the MySQL
+ maintainers. Install this package if in doubt about which MySQL
+ version you need. That will install the version recommended by the
+ package maintainers.
+ .
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-server-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 31177
+Pre-Depends: adduser (>= 3.40), debconf, mysql-common (>= 5.5.44-0ubuntu0.14.04.1)
+Depends: initscripts (>= 2.88dsf-13.3), libdbi-perl, lsb-base (>= 3.0-10), mysql-client-5.5 (>= 5.5.44-0ubuntu0.14.04.1), mysql-server-core-5.5 (>= 5.5.44-0ubuntu0.14.04.1), passwd, perl (>= 5.6), psmisc, debconf (>= 0.5) | debconf-2.0, sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libc6 (>= 2.17), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Recommends: libhtml-template-perl
+Suggests: tinyca, mailx
+Breaks: libmysqlclient-dev (<< 5.5.17~), mysql-client-5.1, mysql-server (<< 5.5.44-0ubuntu0.14.04.1), mysql-server-5.1
+Replaces: libmysqlclient-dev (<< 5.5.17~), mysql-client-5.1, mysql-server (<< 5.5.44-0ubuntu0.14.04.1), mysql-server-5.0, mysql-server-5.1
+Provides: virtual-mysql-server
+Filename: ./mysql-server-5.5_5.5.44-0ubuntu0.14.04.1_i386.deb
+Size: 1961952
+MD5sum: 398aed715509778d350c09e29235ab46
+SHA1: 863569c5081fe41581ee9b5fefbc57c45e136d81
+SHA256: 1629b741d891d4dc97835931a82865d9494bb5feef784deca9db47641ad9f95d
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database server binaries and system database setup
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package contains all the infrastructure needed to setup system
+ databases.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: mysql-server-core-5.5
+Source: mysql-5.5
+Version: 5.5.44-0ubuntu0.14.04.1
+Architecture: i386
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 18226
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.17), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.2.0)
+Breaks: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.1
+Replaces: mysql-client-5.1, mysql-server-5.0, mysql-server-5.1, mysql-server-core-5.0, mysql-server-core-5.1
+Provides: mysql-server-core
+Filename: ./mysql-server-core-5.5_5.5.44-0ubuntu0.14.04.1_i386.deb
+Size: 3480772
+MD5sum: cec40fae2b61c7f4c38cb6d730d8b36b
+SHA1: 87ea8764647eb99a60cd29414ad98d0b2ba0a7de
+SHA256: 9da8feffddb66ea740d239175cd3e2d913ad3f0bcba102c4b4f94cf997eec7cd
+Section: database
+Priority: optional
+Homepage: http://dev.mysql.com/
+Description: MySQL database server binaries
+ MySQL is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries but doesn't contain all the
+ infrastructure needed to setup system databases.
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+
+Package: nginx
+Version: 1.8.0-1+trusty1
+Architecture: all
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 50
+Depends: nginx-full (>= 1.8.0-1+trusty1) | nginx-light (>= 1.8.0-1+trusty1) | nginx-extras (>= 1.8.0-1+trusty1), nginx-full (<< 1.8.0-1+trusty1.1~) | nginx-light (<< 1.8.0-1+trusty1.1~) | nginx-extras (<< 1.8.0-1+trusty1.1~)
+Filename: ./nginx_1.8.0-1+trusty1_all.deb
+Size: 21318
+MD5sum: 7a8f819752dfbe2fd03d6293b413bce6
+SHA1: 31a44b6b49af623eaf0f8e165e64f7119837f46e
+SHA256: 5b1a88df0250b9a7f3d3a03439dac7870e80349095e910f6972490d8a7a577dc
+Section: httpd
+Priority: optional
+Homepage: http://nginx.net
+Description: small, powerful, scalable web/proxy server
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This is a dependency package to install either nginx-full (by default) or
+ nginx-light.
+
+Package: nginx-common
+Source: nginx
+Version: 1.8.0-1+trusty1
+Architecture: all
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 287
+Depends: lsb-base (>= 3.2-14), init-system-helpers (>= 1.13~), sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), python
+Suggests: fcgiwrap, nginx-doc, ssl-cert
+Breaks: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Replaces: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Filename: ./nginx-common_1.8.0-1+trusty1_all.deb
+Size: 47672
+MD5sum: 0cce522bfaf4f3d08281d08a16060fbd
+SHA1: 30ffbb53db8207d797322d0aa5e04f6beebed1e3
+SHA256: 998df0e9e4640c60095d922f18fc15987a8a299f4dafe9dff3f87987a59c0c60
+Section: httpd
+Priority: optional
+Homepage: http://nginx.net
+Description: small, powerful, scalable web/proxy server - common files
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package contains base configuration files used by all versions of
+ nginx.
+
+Package: nginx-full
+Source: nginx
+Version: 1.8.0-1+trusty1
+Architecture: i386
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 1099
+Depends: nginx-common (= 1.8.0-1+trusty1), libc6 (>= 2.10), libexpat1 (>= 2.0.1), libgd3 (>= 2.1.0~alpha~), libgeoip1, libpam0g (>= 0.99.7.1), libpcre3, libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.2.0)
+Suggests: nginx-doc (= 1.8.0-1+trusty1)
+Conflicts: nginx-extras, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Provides: httpd, httpd-cgi, nginx
+Filename: ./nginx-full_1.8.0-1+trusty1_i386.deb
+Size: 413018
+MD5sum: fc492ecf9fa563573881c83d9e296439
+SHA1: 27d64e6fccec38b1c5a4012c95cd0dfb94b34e30
+SHA256: 8d73cc8564db327b571ecd5a802729900b85c1d4b36674e7e204983d7eb9376b
+Section: httpd
+Priority: optional
+Homepage: http://nginx.net
+Description: nginx web/proxy server (standard version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extra).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, GeoIP, Gunzip,
+ Gzip, Gzip Precompression, Headers, Image Filter, Index, Log, Real IP, Spdy,
+ SSI, SSL, Stub Status, Substitution, Upstream, User ID, XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, HTTP Substitutions, Upstream
+ Fair Queue.
+
+Package: nodejs
+Version: 0.10.40-1nodesource1~trusty1
+Architecture: i386
+Maintainer: Chris Lea <chl@nodesource.com>
+Installed-Size: 19215
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), rlwrap
+Conflicts: nodejs-dev, nodejs-legacy, npm
+Replaces: nodejs-dev, nodejs-legacy, npm
+Provides: nodejs-dev, nodejs-legacy, npm
+Filename: ./nodejs_0.10.40-1nodesource1~trusty1_i386.deb
+Size: 3979632
+MD5sum: b07ad40fcf2f28b9b43c36f75669fdab
+SHA1: 786df21b4ea076e4091fb3eee412d347023ac031
+SHA256: 30b6bf35fc758cde92a68974b01e5441be7167a7b97203575fe6bd93aa0ac32f
+Section: web
+Priority: extra
+Homepage: http://nodejs.org/
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+
+Package: nodejs-legacy
+Source: nodejs
+Version: 0.10.25~dfsg2-2ubuntu1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 119
+Depends: nodejs (>= 0.6.19~dfsg1-3~)
+Conflicts: node
+Filename: ./nodejs-legacy_0.10.25~dfsg2-2ubuntu1_all.deb
+Size: 14640
+MD5sum: 9790ebf025ab58d008c27dc7d60624ce
+SHA1: 7f0cdfc48af763c3967ba9aa97a686411cd1ddfd
+SHA256: 3ef64f2b528d626e4a72731561adac792bd20466f2640bda55ee7d7d9af8ae9f
+Section: web
+Priority: extra
+Homepage: http://nodejs.org/
+Description: evented I/O for V8 javascript (legacy symlink)
+ Node.js is a platform built on Chrome's JavaScript runtime for easily
+ building fast, scalable network applications. Node.js uses an
+ event-driven, non-blocking I/O model that makes it lightweight and
+ efficient, perfect for data-intensive real-time applications that run
+ across distributed devices.
+ .
+ This package contains a symlink for legacy Node.js code requiring
+ binary to be /usr/bin/node (not /usr/bin/nodejs as provided in Debian).
+ .
+ No other Debian packages should depend on this package.  For more
+ information, see
+ <http://lists.debian.org/debian-devel-announce/2012/07/msg00002.html>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+
+Package: npm
+Version: 1.3.10~dfsg-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1522
+Depends: nodejs, node-abbrev (>= 1.0.4), node-ansi, node-archy, node-block-stream, node-fstream (>= 0.1.22), node-fstream-ignore, node-github-url-from-git, node-glob (>= 3.1.21), node-graceful-fs (>= 2.0.0), node-inherits, node-ini (>= 1.1.0), node-lockfile, node-lru-cache (>= 2.3.0), node-minimatch (>= 0.2.11), node-mkdirp (>= 0.3.3), node-gyp (>= 0.10.9), node-nopt (>= 2.1.1), node-npmlog, node-once, node-osenv, node-read, node-read-package-json (>= 1.1.0), node-request (>= 2.25.0), node-retry, node-rimraf (>= 2.2.2), node-semver (>= 2.1.0), node-sha, node-slide, node-tar (>= 0.1.18), node-which
+Filename: ./npm_1.3.10~dfsg-1_all.deb
+Size: 441668
+MD5sum: 7f7c6a0b93cd7fcc43277c402b3ff88e
+SHA1: d1d9166d346475a010d159e534f21c2862118190
+SHA256: dd5599e07175c793f20d2b627273b5af6a665b5a430f281bb8327977481db74e
+Section: web
+Priority: extra
+Homepage: http://github.com/isaacs/npm
+Description: package manager for Node.js
+ Node.js is an event-based server-side javascript engine.
+ .
+ npm is the package manager for the Node JavaScript platform.  It puts
+ modules in place so that node can find them, and manages dependency
+ conflicts intelligently.
+ .
+ It is extremely configurable to support a wide variety of use cases.
+ Most commonly, it is used to publish, discover, install, and develop
+ node programs.
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+
+Package: php-apc
+Source: php-apcu
+Version: 4.0.6-1+deb.sury.org~trusty+2
+Architecture: all
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Installed-Size: 30
+Depends: php5-apcu
+Filename: ./php-apc_4.0.6-1+deb.sury.org~trusty+2_all.deb
+Size: 4632
+MD5sum: d8e8bcba7bb834d759e08f0c1172cc5c
+SHA1: 08671de3c1d16ed4ee59b27ed58c84643132a92c
+SHA256: 0c527e77e1084c9ff982e6513ed73fd10b0745cf3d86daffe9fff7bf07e09758
+Section: oldlibs
+Priority: extra
+Homepage: http://pecl.php.net/package/APCu
+Description: APC User Cache for PHP 5 (transitional package)
+ This is a dummy transition package that can be safely removed once no
+ package depend on it.
+
+Package: php-pear
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: all
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 2253
+Depends: php5-common (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1~), php5-cli
+Recommends: gnupg
+Suggests: php5-dev
+Conflicts: php-xml-util
+Replaces: php-xml-util, php4-pear (<< 4:4.4.0-0)
+Provides: php-xml-util
+Filename: ./php-pear_5.6.14+dfsg-1+deb.sury.org~trusty+1_all.deb
+Size: 268228
+MD5sum: 7b39d5d9ce052823523f55b2474cb825
+SHA1: 6d422d59d880c85d7cadce34ca8749514a25942c
+SHA256: 44618171947a7b52fd4939c8dda12da506f3d1a415fa9f13fd0ef08cae46f6e8
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: PEAR - PHP Extension and Application Repository
+ This package contains the base PEAR classes for PHP, as well as the PEAR
+ installer.  Many PEAR classes are already packaged for Debian, and can be
+ easily identified by names beginning with "php-", such as php-db and
+ php-auth.  Note: to build and install precompiled PECL extensions, you
+ will need one of the php development packages installed.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: all
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 29
+Depends: libapache2-mod-php5 (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1~) | libapache2-mod-php5filter (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1~) | php5-cgi (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1~) | php5-fpm (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1~), php5-common (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1~)
+Filename: ./php5_5.6.14+dfsg-1+deb.sury.org~trusty+1_all.deb
+Size: 1270
+MD5sum: 1063baebd46fb9bd67f43e84e36e6abf
+SHA1: 4e3a972d5d57e4e476f025325b2df5ac3edd58d2
+SHA256: 53f42ca434e08d0ccc6c79ba3363050c6ba7aa1cd27b3b1ce343e7a829d064e9
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (metapackage)
+ This package is a metapackage that, when installed, guarantees that you
+ have at least one of the four server-side versions of the PHP5 interpreter
+ installed. Removing this package won't remove PHP5 from your system, however
+ it may remove other packages that depend on this one.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-cgi
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 17408
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.3, libonig2 (>= 5.2.0), libpcre3, libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.9.0), zlib1g (>= 1:1.2.3.4), mime-support, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), php5-cli, php5-json, libmagic1, ucf, tzdata
+Suggests: php-pear
+Filename: ./php5-cgi_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 4180908
+MD5sum: fbbe017bc352b6e0b26abd31c9e517e4
+SHA1: e6a98b4bce6750262ffa37071728f23a60e32361
+SHA256: d76c94853642bc470272bdd86f21734925789a46e08631426f99e33f58ea0cc8
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (CGI binary)
+ This package provides the /usr/lib/cgi-bin/php5 CGI interpreter built
+ for use in Apache 2 with mod_actions, or any other CGI httpd that
+ supports a similar mechanism.  Note that MOST Apache users probably
+ want the libapache2-mod-php5 package.
+ .
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcntl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-cli
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 8778
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.3, libonig2 (>= 5.2.0), libpcre3, libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.9.0), zlib1g (>= 1:1.2.3.4), mime-support, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), php5-json, libmagic1, ucf, tzdata, libedit2 (>= 2.11-20080614-4)
+Recommends: php5-readline
+Suggests: php-pear
+Filename: ./php5-cli_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 2124094
+MD5sum: 68a20593c48e92a035868f03c41ddfdf
+SHA1: a89b6a2a6e584644250abbbf140de11f5ff6072e
+SHA256: 2cf5175501ca05d1a7713262e000a6222357075855caab1ad71383ef15ad1e82
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: command-line interpreter for the php5 scripting language
+ This package provides the /usr/bin/php5 command interpreter, useful for
+ testing PHP scripts from a shell or performing general shell scripting tasks.
+ .
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcntl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-common
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 1166
+Depends: libc6 (>= 2.4), sed (>= 4.1.1-1), psmisc (>= 22.15-1~), lsof, ucf
+Suggests: php5-user-cache
+Conflicts: php5-mhash
+Breaks: php-apc (<< 4.0.0), php-crypt-gpg (<< 1.3.2), php5-json (<< 1.3.1-1~), php5-suhosin (<< 0.9.34), php5-xcache (<< 3.1~), php5-xdebug (<< 2.2.2)
+Provides: php5-mhash, phpapi-20131226
+Filename: ./php5-common_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 712800
+MD5sum: e6e4dd7a35c1b498dfbc32e2471853a1
+SHA1: c90aeced80858852b094f455090b021758674c21
+SHA256: c99d3437f86d76a0e62b8468601d4cd355d3365869a5d8a68746a7cc3330fb08
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Common files for packages built from the php5 source
+ This package contains the documentation and example files relevant to all
+ the other packages built from the php5 source.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-curl
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 138
+Depends: libc6 (>= 2.4), libcurl3 (>= 7.18.0), phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Filename: ./php5-curl_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 27066
+MD5sum: ea36bec04a3701856b7b33646f9ab64f
+SHA1: 8d37d732d2beed65b8a3aea6d5c89d35399c6ae1
+SHA256: 72464efee6579645ca191c04642f9e41560cdd112fe92dec3a85705ecf7a282c
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: CURL module for php5
+ CURL is a library for getting files from  FTP, GOPHER, HTTP server.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-dev
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 3641
+Depends: autoconf (>= 2.63), automake (>= 1.11), libssl-dev, libpcre3-dev, libtool (>= 2.2), shtool, php5-common (>= 5.6.14+dfsg-1+deb.sury.org~trusty+1)
+Recommends: pkg-php-tools, dh-php5
+Conflicts: libtool (<< 2.2)
+Filename: ./php5-dev_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 356136
+MD5sum: c777bbdc9e24fcb386f4caa389b75290
+SHA1: d5fb8b600dcac96e8c69a08a85f21a8faaab8b7d
+SHA256: c2d1daed0860a2f7d4413dce18bf97a93f00fe0ab97c818c4cbf42dd01215354
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Files for PHP5 module development
+ This package provides the files from the PHP5 source needed for compiling
+ additional modules.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-fpm
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 8868
+Depends: libapparmor1 (>= 2.7.0~beta1+bzr1772), libbz2-1.0, libc6 (>= 2.15), libdb5.3, libonig2 (>= 5.2.0), libpcre3, libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.9.0), zlib1g (>= 1:1.2.3.4), sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), mime-support, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), php5-cli, php5-json, libmagic1, ucf, tzdata
+Suggests: php-pear
+Filename: ./php5-fpm_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 2142638
+MD5sum: b491321eb1fe6651011a725b85b144ca
+SHA1: ca8df1476384b3f472c4de40664d9ec62dd3293f
+SHA256: 4cfe634accc10c0e3a763906f6c288f00187bf9accca9a9733f5bc2654df0f1f
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: server-side, HTML-embedded scripting language (FPM-CGI binary)
+ This package provides the Fast Process Manager interpreter that runs
+ as a daemon and receives Fast/CGI requests.  Note that MOST Apache users
+ probably want the libapache2-mod-php5 package.
+ .
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-gd
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 146
+Depends: libc6 (>= 2.4), libgd3 (>= 2.1.0), libxpm4, phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Filename: ./php5-gd_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 26488
+MD5sum: 9a7b59fe8907359d83cb9f1e48220692
+SHA1: 7b40ec3ccd553daae2fe9ee22b557389a77dd46b
+SHA256: 5787f7ef360b2cf83c3b50a4453eff6575915e2f3798cd66d0f0741f6808f64a
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: GD module for php5
+ This package provides a module for handling graphics directly from PHP
+ scripts. It supports the PNG, JPEG, XPM formats as well as Freetype/ttf fonts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-intl
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 422
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libicu52 (>= 52~m1-1~), phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Conflicts: php5-idn
+Replaces: php5-idn
+Provides: php5-idn
+Filename: ./php5-intl_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 106442
+MD5sum: 780f742b06d7d4715f1fabde64b72920
+SHA1: c9176c735c9a526d97e4f0149b1045ea3fe00064
+SHA256: 5aee2afbedc2cbc96ff2d53cdbfb602ad8ea9c75fa5d5f7556d5c03bd4c5e0c3
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: internationalisation module for php5
+ This package provides a module to ease internationalisation of PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-json
+Source: php-json
+Version: 1.3.7-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Installed-Size: 113
+Depends: libc6 (>= 2.4), libjson-c2 (>= 0.11-3~), phpapi-20131226, ucf
+Breaks: php5-common (<< 5.5.0~rc1+dfsg-1~), php5-dev (<< 5.5.0~rc1+dfsg-1~)
+Replaces: php5-dev (<< 5.5.0~rc1+dfsg-1~)
+Filename: ./php5-json_1.3.7-1+deb.sury.org~trusty+1_i386.deb
+Size: 18048
+MD5sum: 5746d2a4894427f1367bda3a58453a7c
+SHA1: 715e8345db1a52e844b50ffbf1d02d8c0adc0b6c
+SHA256: b9cdf1e588c8e3b1cbf28cc4ec5c4397751315661cb55f2475dc0ed7ff885193
+Section: php
+Priority: optional
+Homepage: http://pecl.php.net/package/jsonc
+Description: JSON module for php5
+ This package provides a module for JSON functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-mcrypt
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 94
+Depends: libc6 (>= 2.4), libmcrypt4, phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Filename: ./php5-mcrypt_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 14232
+MD5sum: f81171eb5693ae4e51a3c27e9da4f4b4
+SHA1: 882c63121a448c92603df60ff2ce4d107cd1e481
+SHA256: dd0dc3a277690f7898b05dd9f72955e2cc47b52a9ee98699dde998a70519ceba
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: MCrypt module for php5
+ This package provides a module for MCrypt functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-memcached
+Source: php-memcached
+Version: 2.2.0-2+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Installed-Size: 210
+Depends: libc6 (>= 2.4), libmemcached11, libsasl2-2 (>= 2.1.24), zlib1g (>= 1:1.1.4), php5-common (>= 5.2.0), php5-common (<< 6.0.0), phpapi-20131226, ucf
+Filename: ./php5-memcached_2.2.0-2+deb.sury.org~trusty+1_i386.deb
+Size: 54936
+MD5sum: 97ce3f795bb970bc306fb8dc8eb06ef5
+SHA1: 7161802e4e57bf3ee246919672ea563fe778f8ff
+SHA256: 6ba9fa0e014b77aeac30631381a96d30b6f944aa6f8c7acde069436c47367c03
+Section: php
+Priority: optional
+Homepage: http://pecl.php.net/package/memcached
+Description: memcached extension module for PHP5, uses libmemcached
+ Memcached is a caching daemon designed especially for
+ dynamic web applications to decrease database load by
+ storing objects in memory.
+ .
+ This extension uses libmemcached library to provide
+ API for communicating with memcached servers.
+
+Package: php5-mongo
+Source: php-mongo
+Version: 1.6.6-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 597
+Depends: libc6 (>= 2.4), phpapi-20131226, php5-common (>= 5.3.0)
+Filename: ./php5-mongo_1.6.6-1+deb.sury.org~trusty+1_i386.deb
+Size: 192796
+MD5sum: 6a43a62a0bc0365961135ee50e7fc7fe
+SHA1: e339c94b532437fb3ab3a9fbcc72f4b74495639d
+SHA256: 00dc84d7fa68aff44af5f954bec34c00b870fe39d9d4870659dc0a5133b578db
+Section: php
+Priority: optional
+Homepage: http://www.mongodb.org/display/DOCS/PHP+Language+Center
+Description: MongoDB database driver
+ This package provides an interface for communicating with the MongoDB database
+ in PHP.
+
+Package: php5-mysql
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 262
+Depends: libc6 (>= 2.4), libmysqlclient18 (>= 5.5.24+dfsg-1), phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Conflicts: php5-mysqli, php5-mysqlnd
+Replaces: php5-mysqli, php5-mysqlnd
+Filename: ./php5-mysql_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 60354
+MD5sum: f4765286d5228ebfcc239eb8bc3dd033
+SHA1: 27fa36b39f4ba83e8b6d3c5c983291e600231f5e
+SHA256: 2c456aaa9e575d87056ae81c80772966b7168b0cf74747e8aacd32fe2e43fed9
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: MySQL module for php5
+ This package provides modules for MySQL database connections directly from
+ PHP scripts.  It includes the generic "mysql" module which can be used
+ to connect to all versions of MySQL, an improved "mysqli" module for
+ MySQL version 4.1 or later, and the pdo_mysql module for use with
+ the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-readline
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 78
+Depends: libc6 (>= 2.1.3), libedit2 (>= 3.1-20130611), phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), php5-cli (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Filename: ./php5-readline_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 11814
+MD5sum: 37b3d6c0163f10ad6d674e4983238e39
+SHA1: 9085c56399ed66479bb99d9fd682bbef76ed8bbb
+SHA256: ed464d9c82ec6d51b25dfffeac16450fa43753e9b327a071eca52ca6ee474c59
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: Readline module for php5
+ This package provides a module for readline functions (based on libedit)
+ in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-xsl
+Source: php5
+Version: 5.6.14+dfsg-1+deb.sury.org~trusty+1
+Architecture: i386
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Installed-Size: 82
+Depends: libc6 (>= 2.4), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), phpapi-20131226, php5-common (= 5.6.14+dfsg-1+deb.sury.org~trusty+1), ucf
+Filename: ./php5-xsl_5.6.14+dfsg-1+deb.sury.org~trusty+1_i386.deb
+Size: 13516
+MD5sum: 70f7606a778bec48c6c69a0e21ed8395
+SHA1: 2bf971c53c9253a0076a60e108d33f8e59ae4d79
+SHA256: 2132ee1f996083ed8486faeec17804820b208eb59ba793715d979d96a120e711
+Section: php
+Priority: optional
+Homepage: http://www.php.net/
+Description: XSL module for php5
+ This package provides a module for XSL using the libxslt XSL parser.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: postfix
+Version: 2.11.0-1ubuntu1
+Architecture: i386
+Maintainer: LaMont Jones <lamont@debian.org>
+Installed-Size: 3283
+Depends: libc6 (>= 2.11), libdb5.3, libsasl2-2 (>= 2.1.24), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.0), debconf (>= 0.5) | debconf-2.0, netbase, adduser (>= 3.48), dpkg (>= 1.8.3), lsb-base (>= 3.0-6), ssl-cert, cpio
+Recommends: python
+Suggests: procmail, postfix-mysql, postfix-pgsql, postfix-ldap, postfix-pcre, sasl2-bin, libsasl2-modules, dovecot-common, resolvconf, postfix-cdb, mail-reader, ufw, postfix-doc
+Conflicts: libnss-db (<< 2.2-3), mail-transport-agent, smail
+Replaces: mail-transport-agent
+Provides: default-mta, mail-transport-agent
+Filename: ./postfix_2.11.0-1ubuntu1_i386.deb
+Size: 1044010
+MD5sum: 12a8038f55c6b72c0d6e8f4bbf53529b
+SHA1: b5f85fbc4d31bcf31835e535619e1ac54bddc2f4
+SHA256: 59e14079bbcfb186f72332212370826d7033265bcb43a0b51387307c7789ca3b
+Section: mail
+Priority: extra
+Homepage: http://www.postfix.org
+Description: High-performance mail transport agent
+ Postfix is Wietse Venema's mail transport agent that started life as an
+ alternative to the widely-used Sendmail program.  Postfix attempts to
+ be fast, easy to administer, and secure, while at the same time being
+ sendmail compatible enough to not upset existing users. Thus, the outside
+ has a sendmail-ish flavor, but the inside is completely different.
+
+Package: redis-server
+Source: redis
+Version: 3:3.0.5-1chl1~trusty1
+Architecture: i386
+Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 903
+Depends: libc6 (>= 2.11), libjemalloc1 (>= 2.1.1), redis-tools (= 3:3.0.5-1chl1~trusty1), adduser
+Filename: ./redis-server_3%3a3.0.5-1chl1~trusty1_i386.deb
+Size: 334412
+MD5sum: af4c7e0068e4001fb064f91a7d18e640
+SHA1: 31418c09a8520f2485f06cf3cecae1b984e932a2
+SHA256: 2beaf76ae83f927470c34e815abe85b74abf5635169de4b43cd4206e7b8d6d4b
+Section: database
+Priority: optional
+Homepage: http://redis.io/
+Description: Persistent key-value database with network interface
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: redis-tools
+Source: redis
+Version: 3:3.0.5-1chl1~trusty1
+Architecture: i386
+Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 283
+Depends: libc6 (>= 2.7), libjemalloc1 (>= 2.1.1)
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Filename: ./redis-tools_3%3a3.0.5-1chl1~trusty1_i386.deb
+Size: 82876
+MD5sum: da49e38113ee881d1b44e691ad34422e
+SHA1: 254093dfb59369bd5b8892831eca48570bd9c4ac
+SHA256: ab2d0d374c5d999ad4dcd1eda6424c47566e3c85acc98391d0e7db0808494d45
+Section: database
+Priority: optional
+Homepage: http://redis.io/
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
+

@@ -2,11 +2,6 @@ curl
 libcurl3
 libpcre3-dev
 mcrypt
-mongodb-org
-mongodb-org-mongos
-mongodb-org-server
-mongodb-org-shell
-mongodb-org-tools
 mysql-client
 mysql-client-5.5
 mysql-client-core-5.5

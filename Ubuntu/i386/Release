@@ -1,0 +1,7 @@
+Archive: internalRepo
+Origin: Ubuntu
+Label: Local Ubuntu Internal Repository
+Architecture: i386
+MD5Sum:
+ 3ab1d234b5a89d8e7994fb808b0d9d8a            45343 Packages
+ 9db117bce1fde9b41da9af9f80ed27b4            12585 Packages.gz

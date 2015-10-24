@@ -125,4 +125,4 @@ if [ -d "$OLD_REPO" ]; then
   confirm "Delete old repo?" && rm -rf "$OLD_REPO"
 fi
 
-ls | awk -F "_" '{print "{ name: " $1 ", version: " $2 " }" }'
+ls | awk -F "_" '{print "{ name: " $1 ", version: =" $2 " }" }' > packageVersion
